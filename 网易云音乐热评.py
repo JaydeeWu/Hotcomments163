@@ -1,7 +1,11 @@
 import requests
 import json
 
-url = 'http://music.163.com/weapi/v1/resource/comments/R_SO_4_536502758?csrf_token=568cec564ccadb5f1b29311ece2288f1'
+#输入歌曲ID
+ID=input("歌曲ID:")
+
+
+url = "http://music.163.com/weapi/v1/resource/comments/R_SO_4_{}?csrf_token=568cec564ccadb5f1b29311ece2288f1".format(ID)
 
 headers = {
    'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
